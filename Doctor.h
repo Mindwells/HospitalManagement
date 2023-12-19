@@ -5,12 +5,12 @@
 
 class Doctor {
 private:
-	string id;			// ¹¤ºÅ
-	string name;		// ĞÕÃû
-	int age;			// ÄêÁä
-	int sex;			// ĞÔ±ğ
-	string address;		// ¼ÒÍ¥µØÖ·
-	string department;	// ËùÊô²¿ÃÅ
+	string id;			// å·¥å·
+	string name;		// å§“å
+	int age;			// å¹´é¾„
+	int sex;			// æ€§åˆ«
+	string address;		// å®¶åº­åœ°å€
+	string department;	// æ‰€å±éƒ¨é—¨
 
 public:
 	Doctor(){}
