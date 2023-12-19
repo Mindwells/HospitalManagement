@@ -5,6 +5,7 @@
 
 class Equipment {
 private:
+	string id;			// 器械编号
 	string name;		// 器械名称
 	string department;	// 所属部门
 	double price;		// 购买价格

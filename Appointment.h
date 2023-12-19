@@ -6,6 +6,7 @@
 
 class Appointment {
 private:
+	string id;				// 就诊编号
 	string visitTime;		// 就诊时间
 	Doctor doctor;			// 就诊医生
 	string department;		// 就诊部门

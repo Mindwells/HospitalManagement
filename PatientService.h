@@ -13,8 +13,8 @@ public:
 	bool addPatient(Patient patient);
 	bool delPatient(string id);
 	bool updatePatient(Patient patient);
-	vector<Patient> findPatientsByName();
-	Patient findPatientById();
+	vector<Patient> findPatientsByName(string name);
+	Patient findPatientById(string id);
 	vector<Patient> sortById();
 };
 

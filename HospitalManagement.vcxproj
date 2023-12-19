@@ -127,16 +127,20 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="DoctorServiceImpl.cpp" />
     <ClCompile Include="Patient.h" />
     <ClCompile Include="test.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Appointment.h" />
+    <ClInclude Include="AppointmentService.h" />
     <ClInclude Include="Doctor.h" />
+    <ClInclude Include="DoctorService.h" />
     <ClInclude Include="Drug.h" />
     <ClInclude Include="DrugService.h" />
     <ClInclude Include="entityHeader.h" />
     <ClInclude Include="Equipment.h" />
+    <ClInclude Include="EquipmentService.h" />
     <ClInclude Include="header.h" />
     <ClInclude Include="PatientService.h" />
     <ClInclude Include="serviceHeader.h" />
