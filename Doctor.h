@@ -4,6 +4,7 @@
 #include "header.h"
 
 class Doctor {
+	friend class DoctorService;
 private:
 	string id;			// 工号
 	string name;		// 姓名
@@ -14,6 +15,8 @@ private:
 
 public:
 	Doctor(){}
+	Doctor(string id, string name, int age, int sex, string address, string department) :
+		id(id), name(name), age(age), sex(sex), address(address), department(department) {}
 };
 
 #endif 

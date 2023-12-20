@@ -12,10 +12,14 @@ public:
 	vector<Doctor> getAllDoctor();
 	bool addDoctor();
 	bool delDoctor(string id);
-	bool updateDoctor(Doctor doctor);
+	void changeDoctorInfo(string id);
+	bool updateDoctor(Doctor& doctor);
 	vector<Doctor> findDoctorsByName(string name);
-	Doctor findDoctorById();
+	Doctor& findDoctorById(string id);
 	vector<Doctor> sortById();
+
+	bool isExist(string id);
+	void showInfo(vector<Doctor> v);
 };
 
 #endif

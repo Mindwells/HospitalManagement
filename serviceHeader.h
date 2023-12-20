@@ -3,5 +3,6 @@
 
 #include "PatientService.h"
 #include "DrugService.h"
+#include "DoctorService.h"
 
 #endif
