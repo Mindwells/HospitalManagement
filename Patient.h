@@ -5,19 +5,24 @@
 #include "Appointment.h"
 
 class Patient {
+    friend class PatientService;
 private:
-    int id;
+    string id;
     string name;
-    string gender;
     string dateOfBirth;
     int age;
+    int sex;
     double weight;
     string phoneNumber;
     string address;
-    Appointment appointment;
+    vector<Appointment> appointments;
 
 public:
     Patient(){}
+    Patient(string id, string name, string dateOfBirth, int age, int sex, double weight, string phoneNumber, 
+        string address, vector<Appointment> appointments) :
+        id(id), name(name), dateOfBirth(dateOfBirth), age(age), sex(sex), weight(weight), phoneNumber(phoneNumber),
+        address(address), appointments(appointments) {}
 };
 
 #endif

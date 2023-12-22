@@ -1,7 +1,6 @@
 #ifndef _DOCTORSERVICE_H_
 #define _DOCTORSERVICE_H_
 
-#include "header.h"
 #include "Doctor.h"
 
 class DoctorService {

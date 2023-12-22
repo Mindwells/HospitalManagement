@@ -5,6 +5,7 @@
 
 class Doctor {
 	friend class DoctorService;
+	friend ostream& operator<<(ostream& os, const Doctor& doctor);
 private:
 	string id;			// 工号
 	string name;		// 姓名
@@ -14,7 +15,7 @@ private:
 	string department;	// 所属部门
 
 public:
-	Doctor(){}
+	Doctor() {}
 	Doctor(string id, string name, int age, int sex, string address, string department) :
 		id(id), name(name), age(age), sex(sex), address(address), department(department) {}
 };

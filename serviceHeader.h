@@ -4,5 +4,7 @@
 #include "PatientService.h"
 #include "DrugService.h"
 #include "DoctorService.h"
+#include "EquipmentService.h"
+#include "AppointmentService.h"
 
 #endif

@@ -22,6 +22,9 @@
     <Filter Include="service\impl">
       <UniqueIdentifier>{8c316a10-f5ca-48d0-b340-cf4b61a4d52e}</UniqueIdentifier>
     </Filter>
+    <Filter Include="entity\impl">
+      <UniqueIdentifier>{ae81c155-08b8-49f9-85e1-cbb8d2a13a23}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Equipment.h">
@@ -70,6 +73,18 @@
     </ClCompile>
     <ClCompile Include="DoctorServiceImpl.cpp">
       <Filter>service\impl</Filter>
+    </ClCompile>
+    <ClCompile Include="PatientServiceImpl.cpp">
+      <Filter>service\impl</Filter>
+    </ClCompile>
+    <ClCompile Include="AppointmentServiceImpl.cpp">
+      <Filter>service\impl</Filter>
+    </ClCompile>
+    <ClCompile Include="DoctorImpl.cpp">
+      <Filter>entity\impl</Filter>
+    </ClCompile>
+    <ClCompile Include="AppointmentImpl.cpp">
+      <Filter>entity\impl</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

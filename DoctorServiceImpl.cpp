@@ -138,7 +138,7 @@ bool DoctorService::updateDoctor(Doctor& doctor)
 
 	try {
 		// 处理找到医生的情况
-		Doctor foundDoctor = findDoctorById(doctor.id);
+		Doctor& foundDoctor = findDoctorById(doctor.id);
 		foundDoctor = doctor;
 	}
 	catch (const exception e) {
@@ -196,12 +196,7 @@ bool DoctorService::isExist(string id)
 void DoctorService::showInfo(vector<Doctor> v)
 {
 	for (const auto& doctor : v) {
-		cout << "工号: " << doctor.id << endl;
-		cout << "姓名: " << doctor.name << endl;
-		cout << "年龄: " << doctor.age << endl;
-		cout << "性别: " << (doctor.sex == 0 ? "男" : "女") << endl;
-		cout << "地址: " << doctor.address << endl;
-		cout << "部门: " << doctor.department << endl;
+		cout << doctor;
 		cout << "------------------------" << endl;
 	}
 }

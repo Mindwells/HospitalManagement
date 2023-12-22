@@ -17,13 +17,13 @@ int main()
     ds->showInfo(ds->getAllDoctor());
 
     // 修改医生信息
-    ds->changeDoctorInfo("123");
+    ds->changeDoctorInfo("1");
 
     // 显示所有医生信息
     ds->showInfo(ds->getAllDoctor());
 
     // 删除医生
-    ds->delDoctor("123");
+    ds->delDoctor("1");
 
     // 显示所有医生信息
     ds->showInfo(ds->getAllDoctor());
