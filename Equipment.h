@@ -4,6 +4,8 @@
 #include "header.h"
 
 class Equipment {
+	friend class EquipmentService;
+	friend ostream& operator<<(ostream& os, const Equipment& equipment);
 private:
 	string id;			// Æ÷Ðµ±àºÅ
 	string name;		// Æ÷ÐµÃû³Æ
@@ -13,6 +15,8 @@ private:
 	string text;		// ËµÃ÷Êé
 public:
 	Equipment(){}
+	Equipment(string id, string name, string department, double price, string origin, string text) :
+		id(id), name(name), department(department), price(price), origin(origin), text(text) {}
 };
 
 #endif 

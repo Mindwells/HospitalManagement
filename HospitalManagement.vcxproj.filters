@@ -89,5 +89,17 @@
     <ClCompile Include="PatientImpl.cpp">
       <Filter>entity\impl</Filter>
     </ClCompile>
+    <ClCompile Include="EquipmentImpl.cpp">
+      <Filter>entity\impl</Filter>
+    </ClCompile>
+    <ClCompile Include="EquipmentService.cpp">
+      <Filter>service\impl</Filter>
+    </ClCompile>
+    <ClCompile Include="DrugImpl.cpp">
+      <Filter>entity\impl</Filter>
+    </ClCompile>
+    <ClCompile Include="DrugServiceImpl.cpp">
+      <Filter>service\impl</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

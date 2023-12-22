@@ -10,10 +10,12 @@ public:
 
 private:
 	vector<Equipment> getAllEquipments();
+	bool addEquipment();
 	bool delEquipment(string id);
-	bool addEquipment(Equipment equipment);
-	Equipment getEquipment(string id);
-	bool updateEquipment(Equipment equipment);
+	Equipment& getEquipment(string id);
+
+	bool isExist(string id);
+	void showInfo(vector<Equipment> v);
 };
 
 #endif

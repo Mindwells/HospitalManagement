@@ -2,7 +2,7 @@
 #define _DRUGSERVICE_H_
 
 #include "header.h"
-#include "entityHeader.h"
+#include "Drug.h"
 
 class DrugService {
 private:
@@ -10,10 +10,12 @@ private:
 
 public:
 	vector<Drug> getAllDrugs();
+	bool addDrug();
 	bool delDrug(string id);
-	bool addDrug(Drug drug);
-	Drug getDrug(string id);
-	bool updateDrug(Drug drug);
+	Drug& getDrug(string id);
+
+	bool isExist(string id);
+	void showInfo(vector<Drug> v);
 };
 
 #endif
