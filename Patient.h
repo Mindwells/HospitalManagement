@@ -6,6 +6,7 @@
 
 class Patient {
     friend class PatientService;
+    friend ostream& operator<<(ostream& os, const Patient& patient);
 private:
     string id;
     string name;

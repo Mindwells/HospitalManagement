@@ -5,6 +5,7 @@
 #include "DoctorService.h"
 
 class AppointmentService {
+	friend class PatientService;
 private:
 	vector<Appointment> appointments;
 	DoctorService doctorService;

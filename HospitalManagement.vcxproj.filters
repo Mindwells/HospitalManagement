@@ -86,5 +86,8 @@
     <ClCompile Include="AppointmentImpl.cpp">
       <Filter>entity\impl</Filter>
     </ClCompile>
+    <ClCompile Include="PatientImpl.cpp">
+      <Filter>entity\impl</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
